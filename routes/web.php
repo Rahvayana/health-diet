@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DietController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,12 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::get('/user', [UserController::class, 'index'])->name('user');
+    Route::get('/diet',[DietController::class,'index'])->name('diet');
+    Route::get('/TambahDiet',[DietController::class,'add'])->name('add-diet');
+    Route::post('/SimpanDiet',[DietController::class,'store'])->name('save-diet');
+
+});
