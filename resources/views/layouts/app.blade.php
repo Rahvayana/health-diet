@@ -393,7 +393,7 @@
   <!-- Template JS File -->
   <script src="../assets/js/scripts.js"></script>
   <script src="../assets/js/custom.js"></script>
-  <script src="ckeditor/ckeditor.js"></script>
+  <script src="{{asset("ckeditor/ckeditor.js")}}"></script>
 
   <!-- Page Specific JS File -->
   {{-- <script src="../assets/js/page/index.js"></script> --}}

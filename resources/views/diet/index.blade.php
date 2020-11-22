@@ -23,7 +23,10 @@
                   <tr>
                     <td>{{$loop->iteration}}</td>
                     <td>{{$diet->golongan}}</td>
-                    <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                    <td>
+                      <a href="{{ route('detail-diet', $diet->id) }}" class="btn btn-success">Detail</a>
+                      <a href="{{ route('show-diet', $diet->id) }}" class="btn btn-primary">Update</a>
+                    </td>
                   </tr>
                   @endforeach
                 </table>
