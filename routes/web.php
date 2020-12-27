@@ -26,6 +26,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/user', [UserController::class, 'index'])->name('user');
+    Route::get('/admin', [UserController::class, 'admin'])->name('admin');
+    Route::get('/addadmin', [UserController::class, 'addadmin'])->name('add-admin');
+    Route::post('/saveadmin', [UserController::class, 'saveadmin'])->name('save-admin');
     Route::get('/diet',[DietController::class,'index'])->name('diet');
     Route::get('/TambahDiet',[DietController::class,'add'])->name('add-diet');
     Route::post('/SimpanDiet',[DietController::class,'store'])->name('save-diet');

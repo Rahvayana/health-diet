@@ -1,15 +1,15 @@
 <x-app-layout>
     <div class="section-header">
-        <h1>User</h1>
+        <h1>Admin</h1>
         <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active">User</div>
+            <a href="{{ route('add-admin') }}"><button class="btn btn-primary">Tambah Admin</button></a>
         </div>
     </div>
     <div class="row">
         <div class="col-12 col-md-12 col-lg-12">
           <div class="card">
             <div class="card-header">
-              <h4>User Table</h4>
+              <h4>Admin Table</h4>
             </div>
             <div class="card-body">
               <div class="table-responsive">
