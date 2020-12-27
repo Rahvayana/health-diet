@@ -25,6 +25,9 @@ class UserController extends Controller
 
     public function saveadmin(Request $request)
     {
+        $validated = $request->validate([
+            'email' => 'email|unique:users',
+        ]);
         $user=new User();
         $user->name=$request->name;
         $user->email=$request->email;
