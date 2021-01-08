@@ -35,5 +35,6 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/UpdateDiet/{id}',[DietController::class,'show'])->name('show-diet');
     Route::post('/StoreDiet/{id}',[DietController::class,'update'])->name('update-diet');
     Route::get('/DietDetail/{id}',[DietController::class,'detail'])->name('detail-diet');
+    Route::get('/history',[DietController::class,'history'])->name('history');
 
 });

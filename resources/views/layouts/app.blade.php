@@ -59,6 +59,9 @@
               <li class="menu-header">User</li>
               <li><a class="nav-link" href="{{ route('user') }}"><i class="far fa-user"></i> <span>User Data</span></a></li>
               <li><a class="nav-link" href="{{ route('admin') }}"><i class="far fa-file-alt"></i> <span>Admin Data</span></a></li>
+
+              <li class="menu-header">History</li>
+              <li><a class="nav-link" href="{{ route('history') }}"><i class="far fa-user"></i> <span>BMI History</span></a></li>
             </ul>
         </aside>
       </div>
