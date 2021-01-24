@@ -18,8 +18,8 @@
                     <th>Nama</th>
                     <th>Usia</th>
                     <th>Berat</th>
-                    <th>Indeks</th>
-                    <th>Hasil</th>
+                    <th>Indeks/BMR</th>
+                    <th>Hasil/Jml Kalori</th>
                     <th>Keterangan</th>
                   </tr>
                   @foreach ($histories as $history)
